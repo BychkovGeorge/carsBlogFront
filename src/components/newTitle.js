@@ -9,7 +9,17 @@ class newTitle extends React.Component {
         return(
             <div>
                 <Header />
-                <h1>new title</h1>
+                <form className="container margin">
+                    <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">Введите заголовок</label>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">Введите текст статьи</label>
+                        <textarea type="password" className="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <button type="submit" className="btn btn-primary">Добавить статью</button>
+                </form>
                 <Footer />
             </div>
         );

@@ -6,6 +6,7 @@ import Home from "../components/home";
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router';
 import newTitle from "./newTitle";
+import enter from "./enter";
 
 class RouterClass extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class RouterClass extends React.Component {
                     <Route path='/' exact={true} component={App}/>
                     <Route path='/home' exact={true} component={Home}/>
                     <Route path='/newTitle' exact={true} component={newTitle}/>
+                    <Route path='/entrance' exact={true} component={enter}/>
                 </React.Suspense>
             </Switch>
         );
